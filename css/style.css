@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+.copyright {
+    font-size: small;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.js-toggle-wrapper {
+    margin-top: 2rem;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    top: 1em
+}
+
+.js-toggle {
+    touch-action: pan-x;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent
+}
+
+.js-toggle-screenreader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.js-toggle-track {
+    width: 50px;
+    height: 25px;
+    padding: 0;
+    border-radius: 30px;
+    background-color: hsl(222, 14%, 7%);
+    transition: all 0.2s ease
+}
+
+.js-toggle-track-check {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease
+}
+
+.js-toggle--checked .js-toggle-track-check {
+    opacity: 1;
+    transition: opacity 0.25s ease
+}
+
+.js-toggle-track-x {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    opacity: 1;
+    transition: opacity 0.25s ease
+}
+
+.js-toggle--checked .js-toggle-track-x {
+    opacity: 0
+}
+
+.js-toggle-thumb {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0;
+    transform: translateX(0)
+}
+
+.js-toggle--checked .js-toggle-thumb {
+    transform: translateX(26px);
+    border-color: #000000
+}
+
+.js-toggle--focus .js-toggle-thumb {
+    box-shadow: 0 0 2px 3px rgb(0, 0, 0)
+}
+
+.js-toggle:active .js-toggle-thumb {
+    box-shadow: 0 0 5px 5px #f89c11
+}
+
+body.dark-mode,
+body.dark-mode main *,
+.dark-mode #head,
+.dark-mode .navbar-default,
+.dark-mode .navbar-default .navbar-nav>li>a,
+.dark-mode .navbar-default .navbar-nav>li>a:hover,
+.dark-mode .navbar-default .navbar-nav>li>a:focus,
+.dark-mode .language-switcher a {
+    background: #2d2d2d;
+    color: #f5f5f5
+}
+
+body.dark-mode a {
+    color: #ff9800
+}
+
+body.dark-mode h1 {
+    color: #f5f5f5
+}
+
+body.dark-mode #head .title {
+    color: #f5f5f5
+}
+
+body.dark-mode .navbar-default .navbar-toggle {
+    background-color: #2d2d2d
+}
+
+body.dark-mode .navbar-default .navbar-toggle .icon-bar {
+    background: #666
+}
+
+body.dark-mode .section-title a,
+body.dark-mode .entry-title a {
+    color: #f5f5f5
+}
+
+body.dark-mode .section-title a:hover,
+body.dark-mode .entry-title a:hover {
+    color: #66ff00d3;
+    opacity: .7
+}
+
+.dark-mode .language-switcher a:hover {
+    color: #fd0202
+}
+
+body.dark-mode pre,
+body.dark-mode pre span,
+body.dark-mode code {
+    background: #000 !important
+}
+
+.dark-mode .pagination>li.active>a {
+    color: #800
+}
+
+.dark-mode .pagination>li.active>a:hover {
+    color: #800;
+    background: none
+}
+
+.dark-mode .pagination>.disabled>span,
+.dark-mode .pagination>.disabled>a,
+.dark-mode .pagination>.disabled>a:hover,
+.dark-mode .pagination>.disabled>a:focus {
+    color: #999;
+    cursor: not-allowed;
+    background-color: transparent;
+    border-color: #ddd
+}
+
+.dark-mode .pagination>li>a:hover {
+    color: #800;
+    background: none
+}
